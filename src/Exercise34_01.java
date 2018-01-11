@@ -1,3 +1,13 @@
+/*
+* Keshawn Jones
+* January 17, 2018
+* CSCI 5520
+* Exercise 34.01 Write a program that views, inserts, and updates
+* staff information stored in a database, as shown in Figure 34.27a. The View button
+* displays a record with a specified ID. The Insert button inserts a new record. The
+* Update button updates the record for the specified ID.
+*/
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -276,8 +286,8 @@ public class Exercise34_01 extends Application{
             
             //Insert new row into table
             pstmt.setString(1, txtID.getText());
-            pstmt.setString(2, txtFirst.getText());
-            pstmt.setString(3, txtLast.getText());
+            pstmt.setString(2, txtLast.getText());
+            pstmt.setString(3, txtFirst.getText());
             pstmt.setString(4, txtMI.getText());
             pstmt.setString(5, txtAddress.getText());
             pstmt.setString(6, txtCity.getText());
