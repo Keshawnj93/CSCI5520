@@ -117,7 +117,7 @@ public class Exercise34_01 extends Application{
         //Connect to Database
         connection = null;
         try{
-            connection = DriverManager.getConnection("jdbc:mysql://localhost/CSCI5520", "root", "Flylow13");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost/CSCI5520", "scott", "tiger");
         } catch (Exception e){
             System.out.println ("Error connecting to server");
             System.exit(0);
